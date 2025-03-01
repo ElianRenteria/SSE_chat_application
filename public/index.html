@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="portal" class="container">
+        <h1>Chat App</h1>
+        <input id="username" type="text" name="text" placeholder="username" aria-label="Text">
+        <button onclick="login()" id="EnterButton">Enter</button>
+    </div>
+    <div id="header"><button id="logout_button" onclick="logout()" class="secondary outline">logout</button></div>
+    <main id="app" class="container">
+        <article id="chat"></article>
+        <form id="userinput">
+            <fieldset role="group">
+                <input name="message" type="text" placeholder="message" id="message" />
+                <input type="submit" value="Send" id="send"/>
+            </fieldset>
+        </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
