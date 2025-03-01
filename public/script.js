@@ -12,7 +12,7 @@ eventSource.onmessage = function(event) {
     chatDiv.innerHTML = messages.map(msg => `
         <div class="message">
             <img src='https://api.dicebear.com/9.x/fun-emoji/svg?seed=${msg.username}' alt='Profile Image'>
-            <p>${msg.message}</p>
+            <p>${msg.username}: ${msg.message}</p>
         </div>
     `).join('');
     
