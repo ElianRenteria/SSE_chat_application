@@ -1,7 +1,7 @@
 let username = '';
 
 
-const eventSource = new EventSource('http://192.0.1.25:3000/events');
+const eventSource = new EventSource('http://192.168.1.25:3000/events');
 
 
 eventSource.onmessage = function(event) {
@@ -24,7 +24,7 @@ eventSource.onmessage = function(event) {
 document.getElementById('send').addEventListener('click', function() {
     const message = document.getElementById('message').value;
     if (message) {
-        fetch('http://192.0.1.25:3000/messages', {
+        fetch('http://192.168.1.25:3000/messages', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
