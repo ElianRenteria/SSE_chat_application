@@ -68,5 +68,7 @@ if (localStorage.getItem('username')) {
     $('#message').focus();
     $('#app').show(); 
     $('#header').show(); 
+}
+else {
     setup(); 
 }
